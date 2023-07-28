@@ -1,0 +1,116 @@
+html,body{
+    margin: 0 0 0 0;
+    font-family: "Times New Roman", Times, serif;
+}
+h1{
+    margin: 0 0 0 0;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+}
+h2{
+    margin-bottom: 39px;
+}
+h3{
+    padding-left: 10px;
+}
+.head{
+    color: white;
+    background-color:black;
+}
+label{
+    font-size: larger;
+}
+input{
+    width: 90%;
+    margin-bottom: 10px;
+    padding: 10px 3px 10px 3px;
+}
+button{
+    margin-top: 8px;
+    padding: 15px 3px 15px 3px;
+    border: none;
+    background-color: #F5F5F5;
+    width: 150px;
+    border-radius: 20px;
+}
+button:hover{
+    background-color: #749BC2;
+    cursor: pointer;
+}
+a{
+    font-size: larger;
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: black;
+    /* color:  #D6E4E5; */
+}
+#tableid {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
+#tableid th{
+background-color: white;
+color: black;
+}
+#tableid tbody{
+    background-color:  #F5F5F5;
+    color: black;
+}
+.bodypart{
+    padding-top: 60px;
+    background-color: #D6E4E5; 
+    padding-left: 150px;
+    padding-right: 100px;
+    padding-bottom: 90px;
+    height: 45%;
+    text-align: center;
+}
+.blockpart{
+    background-color: black; 
+    text-align:center ;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: inline-block;
+    width: 20.97%;
+    margin-right: 24px;
+    border-radius: 20px;
+}
+.blockpart:hover{
+    background-color: #749BC2;
+    cursor: pointer;
+}
+.stylepart{
+    border-radius: 20px;
+    background-color: #D6E4E5; 
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 20px;
+   padding: 20px;
+}
+.selectpart{
+    color: white;
+    background-color: black; 
+    width: 50%;
+    margin-left: 27%;
+    border-radius: 20px;
+    padding-bottom: 24px;
+    padding-top: 15px;
+    text-align: center;
+}
+.formstyle{
+    color: white;
+    background-color: black; 
+    width: 27%;
+    margin-left: 35%;
+    border-radius: 20px;
+    padding-bottom: 27px;
+    padding-top: 15px;
+    text-align: center;
+}
+

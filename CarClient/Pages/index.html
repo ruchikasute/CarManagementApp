@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="app.js" crossorigin="anonymous"></script>
+    <title>Car List</title>  
+</head>
+
+<body>
+    <div class="head"><h1>Car Management App</h1></div><div class="bodypart">
+      
+    <h2>What to do you want to perform</h2>
+
+   <div class="blockpart">
+    <i class="fa-solid fa-car-side fa-lg" style="color: #fdfcfc;"></i><br>
+    <a href="#insertpartid">INSERT</a>
+   </div>
+
+   <div class="blockpart">
+    <i class="fa-solid fa-car-side fa-lg" style="color: #ffffff;"></i><br>
+    <a href="#updatepartid">UPDATE</a>
+   </div>
+   
+<div class="blockpart">
+    <i class="fa-solid fa-car-side fa-lg" style="color: #ffffff;"></i><br>
+    <a href="#deletepartid">DELETE</a>
+</div>
+ 
+<div class="blockpart">
+    <i class="fa-solid fa-car-side fa-lg" style="color: #ffffff;"></i><br>
+    <a href="#selectpartid">CAR LIST</a>
+</div>
+
+
+
+</div >
+<div id="insertpartid"  class="stylepart">
+    <h2>Insert Car Details</h2>
+    <form action="" method="post" class="formstyle">
+        <h3>Enter details of the car to insert</h3>
+        <label for="carid">Id</label><br>
+        <input type="number" id="carid">
+        <div id="message"></div>
+        <label for="model">Model</label><br>
+        <input type="text" id="model">
+        <label for="color">Color</label><br>
+        <input type="text" id="color">
+        <div id="message"></div>
+        <label for="price">Price</label><br>
+        <input type="number" id="price"><br>
+        <button id="postButton" type="button" onclick="createCar()">PostButton</button>
+        <div id="donemessage"></div>
+    </form>
+    
+</div>
+
+<div id="updatepartid" class="stylepart">
+    <h2>Update Car By Id</h2>
+    <div class="formstyle">
+        <h3>Enter id of the car to be updated</h3>
+    <input type="number" id="updateid">
+    <div id="messageupdate"></div>
+    <button id="showForm" type="button" onclick="displayForm()">UpdateButton</button>
+    <form id="updateForm" action="" method="post" style="display: none;">
+        <label for="updatemodel">Model</label>
+      <input type="text" id="updatemodel"/><br>
+        <label for="updatecolor">Color</label>
+      <input type="text" id="updatecolor"/><br>
+      <div id="colormessage"></div>
+      <label for="updateprice">Price</label>
+      <input type="number" id="updateprice"/><br>
+    <button id="updateButton" type="button" onclick="updateCar()">UpdateButton</button>
+  </form>
+    <div id="messageupdate"></div>
+</div>
+    </div>
+    
+<div id="deletepartid" class="stylepart" >
+    <h2>Delete Car</h2>
+    <div class="formstyle">
+        <h3>Enter id of the car to be deleted</h3>
+    <input type="number" id="idcar">
+    <button type="button" onclick="deleteCar()">DeleteButton</button>
+    <div id="messagedelete"></div>
+</div> 
+    </div>
+    
+
+<div id="selectpartid" class="stylepart">
+    <h2>Car List</h2>
+    <div class="selectpart" >
+        <h3>Select the button to view all cars</h3>
+        <table  style="display: none;" id="tableid">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Model</th>
+                    <th>Color</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody id="carList"></tbody>
+        </table>
+    
+        <button onclick="displayCars()">Display all cars</button>
+    </div>
+    </div>
+   
+</body>
+
+</html>
